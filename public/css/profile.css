@@ -1,0 +1,36 @@
+.cj-margin{
+    padding-right: 0;
+}
+
+.cj-profile {
+    margin: 110px auto auto 20%;
+    padding: 0 15%;
+    position: relative;
+}
+
+.cj-profile-img {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.cj-profile-img .img-fluid {
+    height: 170px;
+    margin-bottom: 10px;
+    width: 170px;
+}
+
+@media screen and (max-width:768px) {
+    .cj-profile {
+        margin: 80px auto auto auto;
+        padding: 5%;
+    }
+    .cj-btn-update,
+    .cj-margin {
+        padding-right: 15px;
+        margin-bottom: 16px;
+    }
+}

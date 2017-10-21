@@ -1,0 +1,265 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    
+}
+/*Dashboard*/
+body{
+    padding-top: 3.5rem;
+    background-color: white !important;
+}
+.cj-aside{
+	background-color: #EEEEEE;	
+	border-radius: 0;
+	bottom: 0;
+	left: 0;	
+	position: fixed;
+	top: 56px;
+	width: 20%;
+    z-index: 1000;
+}
+.cj-aside .list-group .list-group-item{
+	background-color: #EEEEEE;
+	border-radius: 0;
+	border: none;
+	transition: 0.5s all;
+}
+.cj-aside .list-group .list-group-item:hover{
+	background-color: #BDBDBD;
+	color: #007bff;
+	cursor: pointer;
+}
+.cj-aside .list-group .list-group-item.active{
+	background-color: #ffffff;
+	border: none;
+	color: #007bff;
+	font-weight: bold;
+}
+.cj-show-aside{
+	background-color: #007bff;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 5px 5px 10px #989898;
+	display: none;
+	height: 45px;	
+	position: fixed;
+	right: 4%;
+	top: 60px;
+	width: 45px;
+	z-index: 999;	
+}
+.cj-show-aside:focus{
+	outline: none;
+}
+.cj-dropdown-menu{
+	left: -10%;
+}
+.cj-section{
+	margin: 40px auto auto 20%;
+	padding: 2%;		
+	position: relative;
+    width: 100%;
+	
+}
+.dropdown-item:hover{
+	background-color: #EEEEEE !important; 
+	cursor: pointer !important;
+}
+.cj-btn:hover{
+	cursor: pointer;
+}
+.list-group-item{
+    color: #007bff;
+}
+
+.equipos-generados{
+    display: none;
+}
+.notify{
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: center;
+    margin-right: -250px;
+    position: fixed;
+    right: 0;
+    top: 56px;
+    width: 250px;
+    z-index: 2000;
+    font-size: 1.2em;
+}
+.equipos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.team{
+    width: 65%;
+    padding: 10px;
+}
+.information{
+    width: 35%;
+    border-radius: .25rem;
+}
+.load{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    animation: 1s load linear infinite;
+    border: 5px solid rgba(0,0,0,0.5);
+    border-radius: 50%;
+    border-top-color: dodgerblue;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+}
+@keyframes load{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*Fin Dashboard*/
+
+/*Formulario configuración*/
+.je-container{
+	background-color: #fff;
+	margin: auto;
+	padding: 3% 5%;
+	width: 80%;
+}
+.je-input{
+	border: 1px solid #d8d8d8;
+	border-radius: 0.25rem;
+	display: block;
+	font-size: 1.1rem;
+	height: 35px;
+	margin: auto;
+	margin-bottom: 3%;
+	outline: none;
+	padding: 0 5%;
+	transition: 0.5s all;
+	width: 80%;
+}
+.je-input:focus{
+	border: 1px solid #1565C0;	
+}
+.je-button{
+	background-color: #1565C0;
+	border: none;
+	color: #ffffff;
+	text-transform: uppercase;
+    width: 40%;
+}
+.je-button:hover{
+	cursor: pointer;
+}
+.je-button:active{
+	box-shadow: none;	
+}
+.je-button:disabled{
+	background-color: #868e96;
+}
+.je-check{
+	display: inline-block;
+	height: auto;
+	margin-left: 10%;
+	width: auto;
+}
+.je-form label{
+	margin-left: 10%;
+}
+.je-form .je-lbl-check{
+	margin-left: 1%;
+}
+.je-title{
+	margin-bottom: 1%;
+	text-align: center;
+}
+.je-text{
+	margin-bottom: 3%;
+	text-align: center;
+}
+.je-text span{
+	color: #1565C0;
+	font-weight: bold;
+}
+/*Fin formulario configuración*/
+
+@media screen and (max-width:768px){
+    /*Dashboard*/
+	.cj-aside{
+		left: -80%;
+		transition: 0.5s all;		
+		width: 80%;		
+	}
+	.cj-section{
+		margin: 40px auto auto auto;
+		padding: 10% 4%;
+        background-color: white;
+	}
+	.cj-show-aside{
+		display: inline-block;
+	}
+    .equipos{
+        display: block;
+
+    }
+    .td-student{
+        display: none;
+    }
+    .team, .information{
+        width: 100%;
+        padding: 10px;
+    }
+    /*Fin Dashboard*/
+    
+    /*Formulario configuracion*/
+    .je-navbar .je-left, .je-navbar .je-rigth {		
+		width: 50%;
+	}
+	.je-navbar .je-left a, .je-navbar .je-rigth a{	
+		height: 40px;	
+	}
+	.je-navbar .je-left .je-logo{
+		display: none;
+	}
+	.je-navbar{
+		height: 40px;		
+		padding: 0;		
+	}
+	.je-container{
+		padding: 5% 0;
+		height: 100%;
+		width: 100%;
+        margin-bottom: 10px;
+	}
+	.je-input{
+		height: 40px;
+		width: 92%;
+	}
+	.je-check{
+		height: auto;
+		margin-left: 4%;
+		width: auto;
+	}
+	.je-form label{
+		margin-left: 4%;
+	}
+	.je-form .je-lbl-check{
+		margin-left: 1%;
+	}
+    /*Fin formulario configuracion*/
+}
